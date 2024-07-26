@@ -3,10 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+    <title>ynex project</title>
+    <style>
+
+    </style>
 </head>
 <body>
-    <h1>hello</h1>
-    <h2>hhi</h2>
+    <div class="main h-screen flex">
+        <!--sidebar-->
+        <div class="sidebar h-full w-60 bg-bg-color text-white opacity-100">
+            <!--sidebar header-->
+            <div class="sidebar-header flex justify-center items-center h-37 border-btm">
+              <a class="header-img" href="#">
+                <img src="./images/sidebarheader.png" class="h-8">
+              </a>
+            </div>
+            <div class="sidebar-content pt-2 ">
+                <!--main-->
+                <div class="p-p text-sm/[14px] text-xs-custom text-textcolor text-opactity font-fontfamily opacity-50 font-semibold tracking-letterspacing">
+                    <span>MAIN</span>
+                </div>
+                   <!--dashboard menu-->
+          <div class="">
+            <input type="checkbox" id="ecommerce-dropdown">
+            <label for="ecommerce-dropdown" class="flex items-center gap-2.5 relative px-4 py-2 font-medium text-gray-300 hover:bg-gray-700">
+                <i class="bx bx-home side-menu__icon text-white text-xl"></i>dashboard
+          <svg class="fill-current text-white absolute right-4"
+          :class="{ 'rotate-180': (selected === 'Dashboard') }" width="30" height="20"
+          viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M4.41107 6.9107C4.73651 6.58527 5.26414 6.58527 5.58958 6.9107L10.0003 11.3214L14.4111 6.91071C14.7365 6.58527 15.2641 6.58527 15.5896 6.91071C15.915 7.23614 15.915 7.76378 15.5896 8.08922L10.5896 13.0892C10.2641 13.4147 9.73651 13.4147 9.41107 13.0892L4.41107 8.08922C4.08563 7.76378 4.08563 7.23614 4.41107 6.9107Z"
+              fill=""></path>
+      </svg></label>
+            <div class="dropdown-content pl-6">
+                <a href="#" class="block py-2 px-3 text-gray-400 hover:text-white rounded-lg">eCommerce</a>
+                <a href="#" class="block py-2 px-3 text-gray-400 hover:text-white relative rounded-lg">Analytics 
+                  <span class="rounded bg-indigo-500 px-2 py-1 text-xs font-medium absolute right-4 text-white">Pro</span></a>
+                <a href="#" class="block py-2 px-3 text-gray-400 hover:text-white relative  rounded-lg">Marketing
+                  <span class="rounded bg-indigo-500 px-2 py-1 text-xs font-medium absolute right-4 text-white">Pro</span>
+                </a>
+                <a href="#" class="block py-2 px-3 text-gray-400 hover:text-white relative rounded-lg">CRM
+                  <span class="rounded bg-indigo-500 px-2 py-1 text-xs font-medium absolute right-4 text-white">Pro</span>
+                </a>
+                <a href="#" class="block py-2 px-3 text-gray-400 hover:text-white relative rounded-lg">Stocks
+                  <span class="rounded bg-indigo-500 px-2 py-1 text-xs font-medium absolute right-4 text-white">Pro</span>
+                </a>
+            </div>
+        </div>
+            </div>
+          </div>
+        <!-- <div class="main-content">12</div> -->
+    </div>
+   
 </body>
 </html>

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.border-btm{
+    border-bottom-width: 1px;
+    border-bottom-color: hsla(0, 0%, 100%, .1);
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+}
