@@ -815,6 +815,17 @@ input[type="checkbox"]:checked ~ .dropdown-content {
 
 .dropdown-content {
   display: none;
+  font-size: .78rem;
+  .crm{
+    padding-inline-start: 1.5rem;
+    a{
+      margin-top: .188rem;
+      margin-bottom: .188rem;
+      padding: .45rem 0.6rem;
+      font-family: Montserrat, sans-serif;
+     }
+  }
+
 }
 
 .hover\:bg-gray-700:hover {
@@ -823,4 +834,45 @@ input[type="checkbox"]:checked ~ .dropdown-content {
 }
 
 .hover\:text-white:hover {
-  --tw-text-opac
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.dashboard1{
+  padding: 0 .75rem;
+  .dashboard-content{
+    margin-top: .188rem;
+    margin-bottom: .188rem;
+      background-color: hsla(0, 0%, 100%, .05);
+      border-radius: .5rem;
+      .box-icon{
+        margin-inline-end: .625rem;
+        height: 1.15rem;
+        font-size: 1.15rem;
+    }
+      .content{
+        font-size: .85rem;
+        font-family: Montserrat, sans-serif;
+        .span{
+          padding-left: .45rem !important;
+          padding-right: .45rem !important;
+          font-size: .75em !important;
+          color: #f5b849;
+          background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+      }
+  }
+ 
+}
+}
+.dot-before::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.dot:hover::before {
+  background-color: white;
+}

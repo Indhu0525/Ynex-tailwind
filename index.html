@@ -14,7 +14,7 @@
 <body>
     <div class="main h-screen flex">
         <!--sidebar-->
-        <div class="sidebar h-full w-60 bg-bg-color text-white opacity-100">
+        <div class="sidebar h-full w-60 bg-bg-color text-white opacity-100 overflow-y-auto">
             <!--sidebar header-->
             <div class="sidebar-header flex justify-center items-center h-37 border-btm">
               <a class="header-img" href="#">
@@ -27,35 +27,684 @@
                     <span>MAIN</span>
                 </div>
                    <!--dashboard menu-->
-          <div class="">
-            <input type="checkbox" id="ecommerce-dropdown">
-            <label for="ecommerce-dropdown" class="flex items-center gap-2.5 relative px-4 py-2 font-medium text-gray-300 hover:bg-gray-700">
-                <i class="bx bx-home side-menu__icon text-white text-xl"></i>dashboard
-          <svg class="fill-current text-white absolute right-4"
-          :class="{ 'rotate-180': (selected === 'Dashboard') }" width="30" height="20"
-          viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M4.41107 6.9107C4.73651 6.58527 5.26414 6.58527 5.58958 6.9107L10.0003 11.3214L14.4111 6.91071C14.7365 6.58527 15.2641 6.58527 15.5896 6.91071C15.915 7.23614 15.915 7.76378 15.5896 8.08922L10.5896 13.0892C10.2641 13.4147 9.73651 13.4147 9.41107 13.0892L4.41107 8.08922C4.08563 7.76378 4.08563 7.23614 4.41107 6.9107Z"
-              fill=""></path>
-      </svg></label>
-            <div class="dropdown-content pl-6">
-                <a href="#" class="block py-2 px-3 text-gray-400 hover:text-white rounded-lg">eCommerce</a>
-                <a href="#" class="block py-2 px-3 text-gray-400 hover:text-white relative rounded-lg">Analytics 
-                  <span class="rounded bg-indigo-500 px-2 py-1 text-xs font-medium absolute right-4 text-white">Pro</span></a>
-                <a href="#" class="block py-2 px-3 text-gray-400 hover:text-white relative  rounded-lg">Marketing
-                  <span class="rounded bg-indigo-500 px-2 py-1 text-xs font-medium absolute right-4 text-white">Pro</span>
-                </a>
-                <a href="#" class="block py-2 px-3 text-gray-400 hover:text-white relative rounded-lg">CRM
-                  <span class="rounded bg-indigo-500 px-2 py-1 text-xs font-medium absolute right-4 text-white">Pro</span>
-                </a>
-                <a href="#" class="block py-2 px-3 text-gray-400 hover:text-white relative rounded-lg">Stocks
-                  <span class="rounded bg-indigo-500 px-2 py-1 text-xs font-medium absolute right-4 text-white">Pro</span>
-                </a>
-            </div>
-        </div>
+                   <div class="dashboard1">
+                    <input type="checkbox" id="dashboard-dropdown">
+                    <label for="dashboard-dropdown" class="dropdown">
+                    <div class="dashboard-content flex font-semibold relative flex items-center p-3 font-semibold ">
+<div class="box-icon items-center">
+  <i class="bx bx-home side-menu__icon text-white text-fsbox"></i>
+</div>
+<div class="content leading-none font-semibold text-gray-400 hover:text-white">
+  Dashboards
+  <span class="ml-2 span py-1 bg-bg-box">12</span>
+</div>
+<div class="chevron-icon flex items-center">
+  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" class="bi bi-chevron-right text-white absolute right-4 font-medium"  fill="currentColor " viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+  </svg>
+</div>
+                    </div>
+                    </label>
+                    <ul class="dropdown-content font-semibold ">
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          CRm
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Ecommerce
+                          </a>
+                        </li>
+                      
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Crypto
+                        </a>
+                      </li> 
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Jobs
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         NFT
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Sales
+                        </a>
+                      </li> 
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Analytics
+                        </a>
+                      </li> 
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Projects
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         HRM
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Stocks
+                        </a>
+                      </li>
+                       <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Courses
+                        </a>
+                      </li> 
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          personal
+                        </a>
+                      </li>
+                    </ul>
+                   </div>
+                   <!--pages-->
+                <div class="p-p text-sm/[14px] text-xs-custom text-textcolor text-opactity font-fontfamily opacity-50 font-semibold tracking-letterspacing">
+                    <span>PAGES</span>
+                </div>
+                   <!--pages menu-->
+                   <div class="dashboard1">
+                    <input type="checkbox" id="pages-dropdown">
+                    <label for="pages-dropdown" class="dropdown">
+                    <div class="dashboard-content flex font-semibold relative flex items-center p-3 font-semibold ">
+<div class="box-icon items-center">
+  <i class="bx bx-file-blank side-menu__icon"></i>
+</div>
+<div class="content leading-none font-semibold  text-gray-400 hover:text-white">
+  Pages
+  <span class="ml-2 span py-1 text-lime-500 bg-emeraid-600">New</span>
+</div>
+<div class="chevron-icon flex items-center">
+  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" class="bi bi-chevron-right text-white absolute right-4 font-medium"  fill="currentColor " viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+  </svg>
+</div>
+                    </div>
+                    </label>
+                    <ul class="dropdown-content font-semibold">
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         About us
+                        </a>
+                      </li>
+                      <!--blog dropdown-->
+                        <li class="crm">
+                          <input type="checkbox" id="blog-dropdown">
+                          <label for="blog-dropdown" class="dropdown">
+                          <div class=" font-semibold flex items-center block hover:text-white">
+                          <div class="flex items-center justify-between  gap-24">
+                            <div class="">
+                              <a href="#" class="content block dot-before  text-gray-400 hover:text-white">
+                                Blog
+                              </a>
+                            </div>
+                         
+                            <div class="">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                              </svg>
+                            </div>
+                          </div>
+                          
+                          </div>
+                          </label>
+                          <ul class="dropdown-content font-semibold">
+                            <li class="crm">
+                              <a href class="content block dot-before  text-gray-400 hover:text-white">
+                              Blog
+                              </a>
+                            </li>
+                            <li class="crm">
+                              <a href class="content block dot-before  text-gray-400 hover:text-white">
+                              Blog-details
+                              </a>
+                            </li>
+                            <li class="crm">
+                              <a href class="content block dot-before  text-gray-400 hover:text-white">
+                             Create-blog
+                              </a>
+                            </li>
+                            </ul>
+                        </li>
+                        <!--chats-->
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         Chat
+                        </a>
+                      </li> 
+                      <!--contacts-->
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         Contacts
+                        </a>
+                      </li>
+                      <!--contacts us-->
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                       Contact-Us
+                        </a>
+                      </li>
+                      <!--ecommerce dropdown-->
+                      <li class="crm">
+                        <input type="checkbox" id="ecommerce-dropdown">
+                        <label for="ecommerce-dropdown" class="dropdown">
+                        <div class=" font-semibold flex items-center block hover:text-white">
+                          <div class="flex items-center justify-between  gap-14">
+                            <div class="">
+                              <a href="#" class="content block dot-before  text-gray-400 hover:text-white">
+                              Ecommerce
+                              </a>
+                            </div>
+                         
+                            <div class="">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        </label>
+                        <ul class="dropdown-content font-semibold">
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Add products
+                            </a>
+                          </li>
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                           Cart
+                            </a>
+                          </li>
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                           Checkout
+                            </a>
+                          </li>
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                           Edit-products
+                            </a>
+                          </li>
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Order-details
+                            </a>
+                          </li>
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                           Orders
+                            </a>
+                          </li>
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         products
+                            </a>
+                          </li>
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                           product-details
+                            </a>
+                          </li>
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                           product-lists
+                            </a>
+                          </li>
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Wishlist
+                            </a>
+                          </li>
+                          </ul>
+                      </li>
+                      <!--email dropdown-->
+                      <li class="crm">
+                        <input type="checkbox" id="email-dropdown">
+                        <label for="email-dropdown" class="dropdown">
+                        <div class=" font-semibold flex items-center block hover:text-white">
+                          <div class="flex items-center justify-between  gap-20">
+                            <div class="">
+                              <a href="#" class="content block dot-before  text-gray-400 hover:text-white">
+                                Email
+                              </a>
+                            </div>
+                         
+                            <div class="">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        </label>
+                        <ul class="dropdown-content font-semibold">
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Mail-App
+                            </a>
+                          </li>
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Mail-settings
+                            </a>
+                          </li>
+                          </ul>
+                      </li>
+                      <!--empty-->
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                        Empty
+                        </a>
+                      </li>
+                      <!--faq's-->
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         FAQ's
+                        </a>
+                      </li>
+                      <!--filemanager dropdown-->
+                      <li class="crm">
+                        <input type="checkbox" id="filemanager-dropdown">
+                        <label for="filemanager-dropdown" class="dropdown">
+                        <div class=" font-semibold flex items-center block hover:text-white">
+                          <div class="flex items-center justify-between  gap-12">
+                            <div class="">
+                              <a href="#" class="content block dot-before  text-gray-400 hover:text-white">
+                                File Manager
+                              </a>
+                            </div>
+                         
+                            <div class="">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        </label>
+                        <ul class="dropdown-content font-semibold">
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          File manager
+                            </a>
+                          </li>
+                          
+                          </ul>
+                      </li>
+                      <!--invoice dropdown-->
+                      <li class="crm">
+                        <input type="checkbox" id="invoice-dropdown">
+                        <label for="invoice-dropdown" class="dropdown">
+                        <div class=" font-semibold flex items-center block hover:text-white">
+                          <div class="flex items-center justify-between  gap-20">
+                            <div class="">
+                              <a href="#" class="content block dot-before  text-gray-400 hover:text-white">
+                               Invoice
+                              </a>
+                            </div>
+                         
+                            <div class="">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        </label>
+                        <ul class="dropdown-content font-semibold">
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         Create Invoice
+                            </a>
+                          </li>
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         Invoice Details
+                            </a>
+                          </li>
+                          <li class="crm">
+                            <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         Invoice List
+                            </a>
+                          </li>
+                          </ul>
+                      </li>
+                      <!--landing-->
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Landing
+                        </a>
+                      </li>
+                      <!--jobs landing-->
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          jobs Landing
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Notifications
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Pricing
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Profile
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Reviews
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Team
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                          Terms&conditions
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         Timeline
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         To Do List
+                        </a>
+                      </li>
+                    </ul>
+                   </div>
+              
+                   <!--task menu-->
+                   <div class="dashboard1">
+                    <input type="checkbox" id="task-dropdown">
+                    <label for="task-dropdown" class="dropdown">
+                    <div class="dashboard-content flex font-semibold relative flex items-center p-3 font-semibold ">
+<div class="box-icon items-center">
+  <i class="bx bx-task side-menu__icon"></i>
+</div>
+<div class="content leading-none font-semibold text-gray-400 hover:text-white">
+ Tasks
+  <span class="ml-2 span py-1 text-lime">New</span>
+</div>
+<div class="chevron-icon flex items-center">
+  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" class="bi bi-chevron-right text-white absolute right-4 font-medium"  fill="currentColor " viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+  </svg>
+</div>
+                    </div>
+                    </label>
+                    <ul class="dropdown-content font-semibold">
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         Kanban Board
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                        List View
+                        </a>
+                      </li>
+                      <li class="crm">
+                        <a href class="content block dot-before  text-gray-400 hover:text-white">
+                         Task Details
+                        </a>
+                      </li>
+                    </ul>
+                   </div>
+                    <!--authentication menu-->
+                    <div class="dashboard1">
+                      <input type="checkbox" id="auth-dropdown">
+                      <label for="auth-dropdown" class="dropdown">
+                      <div class="dashboard-content flex font-semibold relative flex items-center p-3 font-semibold ">
+  <div class="box-icon items-center">
+    <i class="bx bx-fingerprint side-menu__icon"></i>
+  </div>
+  <div class="content leading-none font-semibold  text-gray-400 hover:text-white">
+   Authentication
+  </div>
+  <div class="chevron-icon flex items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" class="bi bi-chevron-right text-white absolute right-4 font-medium"  fill="currentColor " viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+    </svg>
+  </div>
+                      </div>
+                      </label>
+                      <ul class="dropdown-content font-semibold">
+                        <li class="crm">
+                          <a href class="content block dot-before  text-gray-400 hover:text-white">
+                           Coming soon
+                          </a>
+                        </li>
+                        <!--create password dropdown-->
+                          <li class="crm">
+                            <input type="checkbox" id="cpassword-dropdown">
+                            <label for="cpassword-dropdown" class="dropdown">
+                            <div class=" font-semibold flex items-center block hover:text-white">
+                            <div class="flex items-center justify-between  gap-8">
+                              <div class="">
+                                <a href="#" class="content block dot-before  text-gray-400 hover:text-white">
+                                  Create Password
+                                </a>
+                              </div>
+                           
+                              <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                              </div>
+                            </div>
+                            
+                            </div>
+                            </label>
+                            <ul class="dropdown-content font-semibold">
+                              <li class="crm">
+                                <a href class="content block dot-before  text-gray-400 hover:text-white">
+                                Basic 
+                                </a>
+                              </li>
+                              <li class="crm">
+                                <a href class="content block dot-before  text-gray-400 hover:text-white">
+                                Cover
+                                </a>
+                              </li>
+                              </ul>
+                          </li>
+                             <!--lockscreen dropdown-->
+                             <li class="crm">
+                              <input type="checkbox" id="lockscreen-dropdown">
+                              <label for="lockscreen-dropdown" class="dropdown">
+                              <div class=" font-semibold flex items-center block hover:text-white">
+                              <div class="flex items-center justify-between  gap-10">
+                                <div class="">
+                                  <a href="#" class="content block dot-before  text-gray-400 hover:text-white">
+                                    Lock Screen
+                                  </a>
+                                </div>
+                             
+                                <div class="">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                  </svg>
+                                </div>
+                              </div>
+                              
+                              </div>
+                              </label>
+                              <ul class="dropdown-content font-semibold">
+                                <li class="crm">
+                                  <a href class="content block dot-before  text-gray-400 hover:text-white">
+                                  Basic 
+                                  </a>
+                                </li>
+                                <li class="crm">
+                                  <a href class="content block dot-before  text-gray-400 hover:text-white">
+                                  Cover
+                                  </a>
+                                </li>
+                                </ul>
+                            </li>
+                            <!--reset password-->
+                            <li class="crm">
+                              <input type="checkbox" id="resetp-dropdown">
+                              <label for="resetp-dropdown" class="dropdown">
+                              <div class=" font-semibold flex items-center block hover:text-white">
+                              <div class="flex items-center justify-between  gap-10">
+                                <div class="">
+                                  <a href="#" class="content block dot-before  text-gray-400 hover:text-white">
+                                    Reset password
+                                  </a>
+                                </div>
+                             
+                                <div class="">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                  </svg>
+                                </div>
+                              </div>
+                              
+                              </div>
+                              </label>
+                              <ul class="dropdown-content font-semibold">
+                                <li class="crm">
+                                  <a href class="content block dot-before  text-gray-400 hover:text-white">
+                                  Basic 
+                                  </a>
+                                </li>
+                                <li class="crm">
+                                  <a href class="content block dot-before  text-gray-400 hover:text-white">
+                                  Cover
+                                  </a>
+                                </li>
+                                </ul>
+                            </li>
+                               <!--sign in password-->
+                               <li class="crm">
+                                <input type="checkbox" id="signin-dropdown">
+                                <label for="signin-dropdown" class="dropdown">
+                                <div class=" font-semibold flex items-center block hover:text-white">
+                                <div class="flex items-center justify-between  gap-24">
+                                  <div class="">
+                                    <a href="#" class="content block dot-before  text-gray-400 hover:text-white">
+                                     Sign in
+                                    </a>
+                                  </div>
+                               
+                                  <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                    </svg>
+                                  </div>
+                                </div>
+                                
+                                </div>
+                                </label>
+                                <ul class="dropdown-content font-semibold">
+                                  <li class="crm">
+                                    <a href class="content block dot-before  text-gray-400 hover:text-white">
+                                    Basic 
+                                    </a>
+                                  </li>
+                                  <li class="crm">
+                                    <a href class="content block dot-before  text-gray-400 hover:text-white">
+                                    Cover
+                                    </a>
+                                  </li>
+                                  </ul>
+                              </li>
+                               <!--sign up password-->
+                               <li class="crm">
+                                <input type="checkbox" id="signin-dropdown">
+                                <label for="signin-dropdown" class="dropdown">
+                                <div class=" font-semibold flex items-center block hover:text-white">
+                                <div class="flex items-center justify-between  gap-24">
+                                  <div class="">
+                                    <a href="#" class="content block dot-before  text-gray-400 hover:text-white">
+                                      Sign up
+                                    </a>
+                                  </div>
+                               
+                                  <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                    </svg>
+                                  </div>
+                                </div>
+                                
+                                </div>
+                                </label>
+                                <ul class="dropdown-content font-semibold">
+                                  <li class="crm">
+                                    <a href class="content block dot-before  text-gray-400 hover:text-white">
+                                    Basic 
+                                    </a>
+                                  </li>
+                                  <li class="crm">
+                                    <a href class="content block dot-before  text-gray-400 hover:text-white">
+                                    Cover
+                                    </a>
+                                  </li>
+                                  </ul>
+                              </li>
+                              <!--twostep password-->
+                              <li class="crm">
+                                <input type="checkbox" id="twostep-dropdown">
+                                <label for="twostep-dropdown" class="dropdown">
+                                <div class=" font-semibold flex items-center block hover:text-white">
+                                <div class="flex items-center justify-between  gap-4">
+                                  <div class="">
+                                    <a href="#" class="content block dot-before  text-gray-400 hover:text-white">
+                                     Twostep verification
+                                    </a>
+                                  </div>
+                               
+                                  <div class="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                    </svg>
+                                  </div>
+                                </div>
+                                
+                                </div>
+                                </label>
+                                <ul class="dropdown-content font-semibold">
+                                  <li class="crm">
+                                    <a href class="content block dot-before  text-gray-400 hover:text-white">
+                                    Basic 
+                                    </a>
+                                  </li>
+                                  <li class="crm">
+                                    <a href class="content block dot-before  text-gray-400 hover:text-white">
+                                    Cover
+                                    </a>
+                                  </li>
+                                  </ul>
+                              </li>
+                      </ul>
+                     </div>
             </div>
           </div>
-        <!-- <div class="main-content">12</div> -->
+      
     </div>
    
 </body>
