@@ -796,9 +796,7 @@ video {
   outline-style: solid;
 }
 
-.\[w\:R\FFFD-\] {
-  w: R�-;
-}
+
 
 .border-btm{
   border-bottom-width: 1px;
@@ -837,30 +835,69 @@ input[type="checkbox"]:checked ~ .dropdown-content {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.sidebar-content{
+  padding: 8px 0px 80px;
+  opacity: 1;
+}
 .dashboard1{
   padding: 0 .75rem;
   .dashboard-content{
     margin-top: .188rem;
     margin-bottom: .188rem;
-      background-color: hsla(0, 0%, 100%, .05);
+      
       border-radius: .5rem;
       .box-icon{
         margin-inline-end: .625rem;
         height: 1.15rem;
         font-size: 1.15rem;
+        .bx{
+          color: rgba(156, 163, 175);
+        }
+        .bx:hover{
+          color: #fff;
+        }
     }
       .content{
         font-size: .85rem;
         font-family: Montserrat, sans-serif;
-        .span{
+        .dashboardspan{
           padding-left: .45rem !important;
           padding-right: .45rem !important;
           font-size: .75em !important;
           color: #f5b849;
-          background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+          border-radius: .25rem;
+          background-color: rgb(55 65 81); 
       }
+      .pagespan{
+        padding-left: .45rem !important;
+        padding-right: .45rem !important;
+        font-size: .75em !important;
+        color: rgb(35 183 229);
+        border-radius: .25rem;
+        background-color: rgb(35 183 229/.1);
+      }
+      .widgetspan{
+        padding-left: .45rem !important;
+        padding-right: .45rem !important;
+        font-size: .75em !important;
+        color: rgb(230 83 60);
+        border-radius: .25rem;
+        background-color: rgb(230 83 60/.1);
+      }
+      .tablespan{
+        padding-left: .45rem !important;
+        padding-right: .45rem !important;
+        font-size: .75em !important;
+        color: rgb(38 191 148);
+        border-radius: .25rem;
+        background-color: rgb(38 191 148/.1);
+      }
+    
   }
  
+}
+.dashboard-content:hover{
+  background-color: hsla(0, 0%, 100%, .05);
 }
 }
 .dot-before::before {
@@ -875,4 +912,32 @@ input[type="checkbox"]:checked ~ .dropdown-content {
 }
 .dot:hover::before {
   background-color: white;
+}
+.pagespan{
+  color: #fff;
+}
+.main_content{
+  padding-inline-start: 15rem;
+  .header{
+    height: 3.75rem;
+    padding-inline-start: .725rem;
+    padding-inline-end: 1rem;
+  
+    
+      .header_left{
+        padding-left: .325rem;
+        padding-right: .325rem;
+        .ham-icon{
+          margin: .3125rem;
+        }
+   
+    }
+  }
+}
+.text{
+  color: rgb(83 100 133);
+
+}
+.textspan{
+  font-size: .6875rem;
 }

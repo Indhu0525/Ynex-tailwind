@@ -7,7 +7,8 @@ module.exports = {
         'primary':'#ee0181',
         'bg-color': 'rgb(17 28 67)',
         'textcolor':'rgb(163 174 209)',
-        
+        'bgcolorr':'rgb(55 65 81)',
+        'secondary':'rgb(132 90 223)',
       },
       width: {
         '60': '15rem', //custom header width
@@ -35,6 +36,6 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [ require('tailwind-scrollbar'),],
 }
 
