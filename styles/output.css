@@ -982,19 +982,24 @@ left: 13px;
       font-size: .813rem;
     }
   }
-.conttent_body{
-  .box1{
-    .box1_body{
-      padding: 1.25rem;
-    }
-  }
+
+
+.box_head{
+  display: flex;
 }
-
-
+.box_tail{
+  color: rgb(132 90 223);
+}
   .boxleft_span{
     background-color: rgb(243 246 248);
     height: 2.625rem;
     width: 2.625rem;
+  }
+}
+.content_body{
+  .box1{
+    padding: 1.25rem;
+    
   }
 }
 /* Tablet styles */

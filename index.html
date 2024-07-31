@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="./styles/output.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
-    <title>ynex project</title>
-    <style>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts/dist/apexcharts.css">
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-    </style>
+    <title>ynex project</title>
 </head>
 <body class="bg-gray-100">
     <div class="main h-screen flex">
@@ -1672,34 +1672,269 @@ Icons
      </div>
     </div>
     <div class="content_body grid grid-cols-12 gap-x-6 ">
-<div class="xxl:col-span-9 col-span-1">
-<div class="grid grid-cols-12 gap-x-6">
-  <div class="xxl:col-span-4 xl:col-span-4 lg:col-span-12 col-span-12 bg-white">
-    <div class="box1 mb-6 flex flex-col opacity-100 bg-white rounded-lg ">
-      <div clas="box1_body p-5">
-<div clas="box_head flex items-center mb-6">
+<div class="xxl:col-span-9 col-span-12">
+<div class="grid grid-cols-12 gap-x-6 xl:flex 2xl:flex">
+  <!--col1-->
+  <div class="xxl:col-span-4 xl:col-span-4 lg:col-span-12 col-span-12 mb-6 bg-white">
+    <div class="box1  flex flex-col opacity-100 bg-white rounded-xl ">
+      <div class="box1_body">
+<div class="box_head flex mb-5 justify-between">
   <div class="box_left flex items-center">
     <div class="me-2">
       <span class="boxleft_span bg-gray leading-10 rounded-full text-xs mb-1 inline-flex items-center justify-center p-2 font-medium">
         <img src="./images/box1.svg" class="h-10 w-10 rounded-full">
       </span>
     </div>
-    <div class=""></div>
+    <div class="mb-0 font-semibold">Bitcoin - BTC</div>
   </div>
-  <div class="box_right flex items-center"></div>
+  <div class="box_right flex items-center">
+    <div class="btc_chart">
+    </div>
+    <!-- Container for the sparkline charts -->
+  <div id="sparkline1"></div>
+  <script>
+    // Define options for the sparkline chart
+    var options1 = {
+      chart: {
+        type: 'line',
+        width: 120,
+        height: 40,
+        sparkline: {
+          enabled: true,
+        
+        },
+      },
+      series: [{
+        data: [0,45,54,38,56,24,65,31,37,39,62,51,35,41,35,27,93,53,61,27,54,43,19,46]
+      }],
+      stroke: {
+        curve: 'smooth',
+        width: 2
+      },
+      markers: {
+        size: 0
+      },
+      tooltip: {
+        fixed: {
+          enabled:true
+        },
+        x: {
+        
+        },
+        y: {
+          title: {
+            formatter: function (seriesName) {
+              return 'value'; 
+            }
+          },
+          formatter: function (value) {
+            return value; // Display the value
+          }
+        },
+        marker: {
+          show: true
+        },
+      },
+      colors: ['#00e396']
+    };
+
+    // Create the sparkline chart
+    var sparkline1 = new ApexCharts(document.querySelector("#sparkline1"), options1);
+    sparkline1.render();
+  </script>
+  </div>
+</div>
+<div class="box_tail flex justify-between">
+  <div>
+    <p class="mb-1 text-gray-400 font-semibold text-sm">BTC / USD</p>
+    <p class=" mb-0 font-semibold leading-none text-xl">$35,876.29</p>
+  </div>
+  <div class="ms-auto text-end">
+    <p class="mb-0 text-gray-600 flex justify-end">$0.04</p>
+      <span class="mb-0 text-gray-500 text-sm">Vol:(+2.33%)</span>
+    </div>
+ 
+</div>
+      </div>
+    </div>
+  </div>
+  <!--col2-->
+  <div class="xxl:col-span-4 xl:col-span-4 lg:col-span-12 col-span-12 mb-6 bg-white">
+    <div class="box1  flex flex-col opacity-100 bg-white rounded-xl ">
+      <div class="box1_body">
+<div class="box_head flex mb-5 justify-between">
+  <div class="box_left flex items-center">
+    <div class="me-2">
+      <span class="boxleft_span bg-gray leading-10 rounded-full text-xs mb-1 inline-flex items-center justify-center p-2 font-medium">
+        <img src="./images/box1.svg" class="h-10 w-10 rounded-full">
+      </span>
+    </div>
+    <div class="mb-0 font-semibold">Etherium -ETH</div>
+  </div>
+  <div class="box_right flex items-center">
+    <div class="btc_chart">
+    </div>
+    <!-- Container for the sparkline charts -->
+    <div id="sparkline2"></div>
+  <script>
+    // Define options for the sparkline chart
+    var options1 = {
+      chart: {
+        type: 'line',
+        width: 120,
+        height: 40,
+        sparkline: {
+          enabled: true,
+        
+        },
+      },
+      series: [{
+        data: [0,45,54,38,56,24,65,31,37,39,62,51,35,41,35,27,93,53,61,27,54,43,19,46]
+      }],
+      stroke: {
+        curve: 'smooth',
+        width: 2
+      },
+      markers: {
+        size: 0
+      },
+      tooltip: {
+        fixed: {
+          enabled:true
+        },
+        x: {
+        
+        },
+        y: {
+          title: {
+            formatter: function (seriesName) {
+              return 'value'; 
+            }
+          },
+          formatter: function (value) {
+            return value; // Display the value
+          }
+        },
+        marker: {
+          show: true
+        },
+      },
+      colors: ['#00e396']
+    };
+
+    // Create the sparkline chart
+    var sparkline2 = new ApexCharts(document.querySelector("#sparkline2"), options1);
+    sparkline2.render();
+  </script>
+  </div>
+</div>
+<div class="box_tail flex justify-between">
+  <div>
+    <p class="mb-1 text-gray-400 font-semibold text-sm">ETH / USD</p>
+    <p class="] mb-0 font-semibold leading-none text-xl">$31,244.12</p>
+  </div>
+  <div class="ms-auto text-end">
+    <p class="mb-0 text-gray-600 flex justify-end">$2.57</p>
+      <span class="mb-0 text-gray-500 text-sm">Vol:(+13.45%)</span>
+    </div>
+ 
+</div>
+      </div>
+    </div>
+  </div>
+   <!--col2-->
+   <div class="xxl:col-span-4 xl:col-span-4 lg:col-span-12 col-span-12 mb-6 bg-white">
+    <div class="box1  flex flex-col opacity-100 bg-white rounded-xl ">
+      <div class="box1_body">
+<div class="box_head flex mb-5 justify-between">
+  <div class="box_left flex items-center">
+    <div class="me-2">
+      <span class="boxleft_span bg-gray leading-10 rounded-full text-xs mb-1 inline-flex items-center justify-center p-2 font-medium">
+        <img src="./images/box1.svg" class="h-10 w-10 rounded-full">
+      </span>
+    </div>
+    <div class="mb-0 font-semibold">Dash -DASH</div>
+  </div>
+  <div class="box_right flex items-center">
+    <div class="btc_chart">
+    </div>
+    <!-- Container for the sparkline charts -->
+    <div id="sparkline3"></div>
+  <script>
+    // Define options for the sparkline chart
+    var options1 = {
+      chart: {
+        type: 'line',
+        width: 120,
+        height: 40,
+        sparkline: {
+          enabled: true,
+        
+        },
+      },
+      series: [{
+        data: [0,45,54,38,56,24,65,31,37,39,62,51,35,41,35,27,93,53,61,27,54,43,19,46]
+      }],
+      stroke: {
+        curve: 'smooth',
+        width: 2
+      },
+      markers: {
+        size: 0
+      },
+      tooltip: {
+        fixed: {
+          enabled:true
+        },
+        x: {
+        
+        },
+        y: {
+          title: {
+            formatter: function (seriesName) {
+              return 'value'; 
+            }
+          },
+          formatter: function (value) {
+            return value; // Display the value
+          }
+        },
+        marker: {
+          show: true
+        },
+      },
+      colors: ['#ac2128']
+    };
+
+    // Create the sparkline chart
+    var sparkline3 = new ApexCharts(document.querySelector("#sparkline3"), options1);
+    sparkline3.render();
+  </script>
+  </div>
+</div>
+<div class="box_tail flex justify-between">
+  <div>
+    <p class="mb-1 text-gray-400 font-semibold text-sm">DASH / USD</p>
+    <p class="] mb-0 font-semibold leading-none text-xl">$26,345.000</p>
+  </div>
+  <div class="ms-auto text-end">
+    <p class="mb-0 text-gray-600 flex justify-end">$12.32</p>
+      <span class="mb-0 text-gray-500 text-sm">Vol:(+112.95%)</span>
+    </div>
+ 
 </div>
       </div>
     </div>
   </div>
 </div>
 </div>
-<div class="xxl:col-span-9 col-span-12">
+
+<div class="xxl:col-span-3 col-span-12">
   
 </div>
     </div>
   </div>
 </div>
     </div>
-  
 </body>
 </html>
