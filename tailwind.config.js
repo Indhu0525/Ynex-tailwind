@@ -9,7 +9,6 @@ module.exports = {
         'textcolor':'rgb(163 174 209)',
         'bgcolorr':'rgb(55 65 81)',
         'secondary':'rgb(132 90 223)',
-        'bg':'yellow',
       },
       width: {
         '60': '15rem', //custom header width

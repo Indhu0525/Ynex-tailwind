@@ -14,7 +14,7 @@
 <body class="bg-gray-100">
     <div class="main h-screen flex">
         <!--sidebar-->
-    <div class="sidebar w-60 h-full  bg-bg-color text-white fixed overflow-y-auto  overflow-x-hidden">
+    <div class="sidebar w-60 h-full  bg-bg-color text-white fixed overflow-y-auto  overflow-x-hidden hidden lg:block">
             <!--sidebar header-->
             <div class="z-10 sticky top-0 bg-bg-color ">
               <div class="sidebar-header flex justify-center items-center h-16 border-btm">
@@ -1593,58 +1593,113 @@ Icons
           </div>
     </div>
     <!--maincontent-->
-    <div class="main_content w-full">
-<div class="header flex bg-white items-center justify-between w-full">
+<div class="main_content w-full">
+<div class="header flex bg-white items-center justify-between gap-2 w-full">
   <!-- <div class="main_header flex "> -->
-    <div class="header_left">
+    <div class="header_left flex items-center">
+      <div class="img mr-2 lg:hidden">
+        <img src="./images/headlogo.png" width="32" height="32" class="rounded-full text-xl">
+      </div>
       <div class="ham-icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-text-left" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
         </svg>
       </div>
+     
+   
     </div>
-    <div class="header_right flex gap-2">
-      <div class="search_icon p-2.5 ">
+    <div class="header_right flex mg:gap-2 lg:gap-2">
+      <div class="search_icon p-2.5 flex items-center">
         <i class="bx bx-search-alt-2 header-link-icon text-xl"></i>
       </div>
-      <div class="search_icon p-2.5">
+      <div class="search_icon p-2.5 flex items-center">
         <img src="./images/header-img.png" class="w-5 h-5 rounded-full text-xl">
       </div>
-      <div class="darkmode_icon p-2.5">
+      <div class="darkmode_icon p-2.5 flex items-center">
         <i class="bx bx-moon header-link-icon w-5 h-5 text-xl"></i>
       </div>
-      <div class="cart_icon p-2.5">
-        <i class="bx bx-cart header-link-icon w-5 h-5 relative text-xl"></i>
-        <!-- <span class="flex absolute h-5 w-5 -top-[0.25rem] end-0 -me-[0.6rem]">
-        <span class="relative inline-flex rounded-full h-[14.7px] w-[14px] text-[0.625rem] bg-secondary  justify-center items-center">5</span>
-      </span> -->
+      <div class="cart_icon p-2.5 hidden md:block lg:flex items-center">
+        <i class="bx bx-cart header-link-icon w-5 h-5 relative text-xl">
+        <span class="cartspan absolute w-3.5 h-3.5 bg-purple rounded-full text-center text-white font-semibold">5</span></i>
       </div>
-      <div class="notifi_icon p-2.5">
-        <i class="bx bx-bell header-link-icon  w-5 h-5 relative text-xl"></i>
+      <div class="notifi_icon p-2.5 hidden md:block lg:flex items-center">
+        <i class="bx bx-bell header-link-icon  w-5 h-5 relative text-xl">
+          <span class="notispan absolute w-3.5 h-3.5 bg-purple rounded-full text-center text-white font-semibold bg-blue">5</span></i>
+        </i>
+        
       </div>
-      <div class="apps_icon p-2.5">
+      <div class="apps_icon p-2.5 hidden md:block lg:flex items-center">
         <i class="bx bx-grid-alt header-link-icon text-[1.125rem] text-xl"></i>
       </div>
-      <div class="fullscreen_icon p-2.5">
+      <div class="fullscreen_icon p-2.5 hidden md:block lg:flex items-center">
         <i class="bx bx-fullscreen full-screen-open header-link-icon text-xl"></i>
       </div>
-      <div class="heading_icon px-2.5 flex items-center">
+      <div class="heading_icon flex items-center px-2.5">
        <div class="img  mr-2">
         <img src="./images/headimg.png" width="32" height="32" class="rounded-full text-xl">
         </div>
-        <div class="text ">
+        <div class="text hidden md:block lg:block">
        
         
 <p class="font-semibold bgcolorr"> Json Taylor</p>
 <span class="font-normal textspan">Web Designer</span>
         </div>
       </div>
-      <div class="settings_icon p-2.5">
+      <div class="settings_icon p-2.5 flex items-center">
         <i class="bx bx-cog header-link-icon animate-spin-slow settings text-xl" ></i>
       </div>
     </div>
 </div>
+  <!--content-->
+  <div class="content px-6">
+    <div class="content_head block justify-between py-5 md:flex">
+     <div class="content_left">
+      <h3 class="font-semibold text-lg">Crypto</h3>
+     </div>
+     <div class="content_right flex items-center">
+      <div class="flex items-center">
+        <p class="text-[0.813rem] flex font-semibold opacity-100">Dashboards</p>
+        <div class="px-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="rgb(140 144 151)" class="bi bi-chevron-double-right flex items-center" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
+            <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
+          </svg>
+        </div>
+     
+      </div>
+      
+      <span class=" font-semibold">Crypto</span>
+     </div>
     </div>
+    <div class="content_body grid grid-cols-12 gap-x-6 ">
+<div class="xxl:col-span-9 col-span-1">
+<div class="grid grid-cols-12 gap-x-6">
+  <div class="xxl:col-span-4 xl:col-span-4 lg:col-span-12 col-span-12 bg-white">
+    <div class="box1 mb-6 flex flex-col opacity-100 bg-white rounded-lg ">
+      <div clas="box1_body p-5">
+<div clas="box_head flex items-center mb-6">
+  <div class="box_left flex items-center">
+    <div class="me-2">
+      <span class="boxleft_span bg-gray leading-10 rounded-full text-xs mb-1 inline-flex items-center justify-center p-2 font-medium">
+        <img src="./images/box1.svg" class="h-10 w-10 rounded-full">
+      </span>
     </div>
+    <div class=""></div>
+  </div>
+  <div class="box_right flex items-center"></div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="xxl:col-span-9 col-span-12">
+  
+</div>
+    </div>
+  </div>
+</div>
+    </div>
+  
 </body>
 </html>
