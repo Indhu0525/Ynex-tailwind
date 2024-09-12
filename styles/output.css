@@ -6,7 +6,7 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 *,
 ::before,
 ::after {
@@ -804,7 +804,53 @@ video {
   border-bottom-width: 1px;
   border-bottom-color: hsla(0, 0%, 100%, .1);
 }
-
+.text-bitcoin{
+  font-size: 0.813rem;
+}
+.recentbg{
+  background-color: rgba(243 246 248);
+}
+.btc-size{
+  font-size:0.6875rem;
+}
+.text-end{
+  text-align: end;
+}
+.buy-sell-p{
+  padding:0.65rem;
+}
+.border-colorbtc{
+  border-color: rgb( 233 237 246);
+}
+.font-color{
+  color: rgb( 233 237 246);
+}
+.font-fam{
+  font-family: Inter, sans-serif;
+}
+.price-numfont{
+  opacity: 1;
+  color: rgb(140 144 151);
+}
+.additional-color{
+  color:rgb(38 191 148);
+}
+.form-check-input {
+  height: .9rem;
+  width: .9rem;
+}
+.table-fontsize{
+  font-size: 0.85rem;
+}
+.box_heading{
+  font-size: .9375rem;
+  font-weight: 700;
+  color: rgb(51 51 53);
+}
+/* custom css */
+*{
+  font-family: Inter, sans-serif;
+}
 input[type="checkbox"] {
   display: none;
 }
@@ -936,6 +982,7 @@ input[type="checkbox"]:checked ~ .dropdown-content {
     }
     .header_right{
       color: rgb(83 100 133);
+      padding-left:0.48rem;
     }
   }
 }
@@ -970,14 +1017,12 @@ left: 13px;
   .content_head{
     h3{
       color:rgb(51 51 53);
-      font-family: sans-serif;
     }
   }
   .content_right{
-    padding-inline-end: .5rem;
     p{
       color: rgb(132 90 223);
-      padding-inline-start: .5rem;
+   
     }
     p,span{
      
@@ -994,8 +1039,8 @@ left: 13px;
 }
   .boxleft_span{
     background-color: rgb(243 246 248);
-    height: 2.625rem;
-    width: 2.625rem;
+    height: 2.5rem;
+    width: 2.5rem;
   }
 }
 .content_body{
@@ -1024,4 +1069,23 @@ left: 13px;
 .main_content{
   padding-inline-start: 15rem;
 }
+}
+
+/* width */
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #fff;
+  border: 1px solid black;
+}
+
+/* Reset scrollbar for other elements (like the table) */
+.table-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  background: transparent;
 }
