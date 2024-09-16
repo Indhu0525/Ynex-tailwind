@@ -1099,10 +1099,21 @@ left: 13px;
 }
 
 /* Reset scrollbar for other elements (like the table) */
-.table-container::-webkit-scrollbar {
-  width: 0;
-}
 
 .table-container::-webkit-scrollbar-thumb {
   background: transparent;
 }
+.content::-webkit-scrollbar{
+  width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.custom-scrollbar{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
